@@ -1,3 +1,3 @@
 # Email-Spam-Classifier
 
-Classification based Project using Naive Bayes.
+Classification based Machine Learning Project using Naive Bayes Algorithm.
