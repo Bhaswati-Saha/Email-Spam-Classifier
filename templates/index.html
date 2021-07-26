@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Spam Classifier</title>
+    <style>
+        h1{
+          color:#008080;
+        }
+        input
+        {
+          background-color:	#20B2AA;
+          margin-top:20px;
+          padding:5px;
+          font-weight:bold;
+          color:white;
+        }
+
+        body
+        {
+          text-align:center;
+          background:url('https://emailchef.com/wp-content/uploads/2019/06/email-spam-reputation-636x425.png');
+        }
+    </style>
+</head>
+<body>
+     <h1>Email Spam Classifier</h1>
+     <form action="/predict" method="post">
+         <label style="color:#006A4E">Type your Email</label><br><br>
+         <textarea rows="10" cols="50" name="email"></textarea><br><br>
+         <input type="submit" value="Check" />
+
+     </form>
+      {% if response %}
+        {% if response==-1 %}
+           <h2 style="color:green">This Email is Not a Spam.</h2>
+        {% else %}
+           <h2 style="color:red">Oops!!! This Email is a Spam.</h2>
+        {% endif %}
+     {% endif %}
+</body>
+</html>
