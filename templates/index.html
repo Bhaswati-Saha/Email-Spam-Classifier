@@ -15,7 +15,10 @@
           font-weight:bold;
           color:white;
         }
-
+        label{
+         font-weight:bold;
+         color:#006A4E;
+        }
         body
         {
           text-align:center;
@@ -26,7 +29,7 @@
 <body>
      <h1>Email Spam Classifier</h1>
      <form action="/predict" method="post">
-         <label style="color:#006A4E">Type your Email</label><br><br>
+         <label>Type your Email</label><br><br>
          <textarea rows="10" cols="50" name="email"></textarea><br><br>
          <input type="submit" value="Check" />
 
